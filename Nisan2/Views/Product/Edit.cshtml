@@ -1,0 +1,25 @@
+﻿@model Nisan2.Models.Product
+
+<h2>Ürün Güncelle</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div>
+        <label>Ürün Adı</label>
+        <input asp-for="Name" />
+    </div>
+    <div>
+        <label>Açıklama</label>
+        <input asp-for="Description" />
+    </div>
+    <div>
+        <label>Fiyat</label>
+        <input asp-for="Price" />
+    </div>
+    <div>
+        <label>Stok</label>
+        <input asp-for="Stock" />
+    </div>
+    <button type="submit">Güncelle</button>
+</form>

@@ -1,0 +1,23 @@
+﻿@model Nisan2.Models.Product
+
+<h2>Yeni Ürün Ekle</h2>
+
+<form asp-action="Create" method="post">
+    <div>
+        <label>Ürün Adı</label>
+        <input asp-for="Name" />
+    </div>
+    <div>
+        <label>Açıklama</label>
+        <input asp-for="Description" />
+    </div>
+    <div>
+        <label>Fiyat</label>
+        <input asp-for="Price" />
+    </div>
+    <div>
+        <label>Stok</label>
+        <input asp-for="Stock" />
+    </div>
+    <button type="submit">Kaydet</button>
+</form>
